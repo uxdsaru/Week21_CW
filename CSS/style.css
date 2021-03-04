@@ -1,0 +1,597 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Introduction Section using FLEX */
+.section1{
+    width: 100%;
+    background-color: #EFE6DD;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[src*="Images/Logo.png"], img[src*="Images/home.png"]{
+    margin-top: 2.5%;
+    padding-left: 5%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.top_nav{
+    margin-top: 2.5%;
+    padding-right: 5%;
+}
+
+.top_nav a{
+    text-decoration: none;
+    padding-left: 45px;
+    font-family: Montserrat;
+    font-size: 17px;
+}
+
+.active{
+    color: #3D8EBC;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.inactive{
+    color: #94989C;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.abc{
+    display:none;
+}
+
+.Intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.blue{
+    color: #3D8EBC;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    padding-top: 30px;
+}
+
+#section1{
+    color:#161925;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+/* Read More Button Animation */
+.center {
+    position: relative;
+  }
+  
+.outline {
+    width: 190px;
+    height: 55px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #23395B;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #23395B;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #EFE6DD;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+.outline:hover {
+    transition: 1s ease-in-out;
+    background: #3D8EBC;
+    color: #EFE6DD;
+  }
+  
+.outline:hover svg {
+    stroke-dashoffset: -480;
+  }
+   
+.social{
+    display: flex;
+    justify-content: center;
+    padding-inline: 13px;
+    margin-top: 7%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.75%;
+    padding-bottom: 1.75%;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
+/* UX Skills Section using FLEX */
+.section2{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0) 100%), #23395B;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightHeading{
+    color: #EFE6DD;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.whatIDo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin-top: 5%;
+}
+
+.title{
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#desc{
+    background-image: url("../Images/whatIDo.png");
+    background-repeat: no-repeat;
+    background-position: 46% 70%;
+    background-blend-mode: luminosity;
+}
+
+.description{
+    text-align: center;
+    width: 33%;
+    padding: 5%;
+}
+
+#desc1{
+    background-image: url("../Images/userResearch.png");
+    background-repeat: no-repeat;
+    background-position: 25% 15%;
+}
+
+#desc2{
+    background-image: url("../Images/interactionDesign.png");
+    background-repeat: no-repeat;
+    background-position: 25% 15%;
+}
+
+#desc3{
+    background-image: url("../Images/visualDesign.png");
+    background-repeat: no-repeat;
+    background-position: 30% 15%;
+}
+
+
+.font2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #EFE6DD;
+}
+
+#section2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #EFE6DD;
+    margin-top: 7.5%;
+}
+
+.myTools{
+    height: 200px;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../Images/myTools.png");
+    background-repeat: no-repeat;
+    background-position: -50% bottom;
+    background-blend-mode: luminosity;
+}
+
+img[src*="Images/swIcons.png"]{
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+/* For jQuery Animation */
+.fade-in{
+    opacity: 0;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+
+.zero1{
+    transition: opacity 50ms ease-in;
+}
+.zero2{
+    transition: opacity 750ms ease-in;
+}
+.one{
+    transition: opacity 250ms ease-in;
+}
+.two{
+    transition: opacity 750ms ease-in;
+}
+.three{
+    transition: opacity 1500ms ease-in;
+}
+.four{
+    transition: opacity 250ms ease-in;
+}
+.five{
+    transition: opacity 500ms ease-in;
+}
+
+
+/* My Work Section using GRID */
+.section3{
+background-color: #EFE6DD;
+}
+
+.darkHeading{
+    color: #23395B;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "row1 row1" "row2 row2" "row3 row3";
+    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.row1{
+    grid-area: row1;
+    background-color: #3D8EBC;
+    opacity: 0.85;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.row2{
+    grid-area: row2;
+    background-color: #F3DFA2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.row3{
+    grid-area: row3;
+    background-color:#BB4430;
+    opacity: 0.85;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* common properties for class row1, row2, row3 */
+
+#section3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #E3EFF6;
+    opacity: 0.75;
+    padding-top: 3%;
+    padding-bottom: 4.5%;
+}
+
+.caseStudy{
+    width: 190px;
+    height: 55px;
+    color: #EFE6DD;
+    border: 2px solid #EFE6DD;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    background: none;
+
+    border: 0 solid;
+    outline: 2px solid;
+    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.caseStudy:hover{
+    border: 1px solid;
+    box-shadow: 0 0 10px #23395B;
+}
+
+.summary{
+    padding-left: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mockup{
+    display: flex;
+    align-items: center;
+    justify-self: stretch;
+    padding-top: 3.5%;
+    padding-right: 5%;
+}
+
+.h5Blue{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.18538em;
+    color: #23395B;
+    opacity: 0.8;
+    padding-bottom: 1%;
+}
+
+
+
+/* Footer Section using FLEX */
+.section4{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0) 100%), #23395B;
+}
+
+.backtotop{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+h5{
+    color: #EFE6DD;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.18538em;
+    padding-top: 1%;
+}
+
+.section4 a{
+    text-decoration: none;
+}
+
+.linen{
+    color: #EFE6DD;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 7.5%;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+   margin-top: 1.5%;
+}
+
+.font1{
+    color: #EFE6DD;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+/* Read More Button Animation */
+.center1 {
+    position: relative;
+  }
+  
+.solid-blue{
+    width: 174px;
+    height: 36px;
+    background: #3D8EBC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #EFE6DD;
+    border: none;
+    cursor: pointer;
+}
+  
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #EFE6DD;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+.solid-blue:hover {
+    transition: 1s ease-in-out;
+    background: #3D8EBC;
+    color: #EFE6DD;
+  }
+  
+.solid-blue:hover svg {
+    stroke-dashoffset: -480;
+  }
+
+.no-fill{
+    width: 174px;
+    height: 36px;
+    color: #EFE6DD;
+    background: none;
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.no-fill:hover{
+    border: 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #EFE6DD;
+    text-align: center;
+    margin-top: 7.5%;
+    padding-bottom: 1.5%;
+}
+
+/* media queries */
+@media screen and (max-width:600px){
+    .image{
+        height: auto;
+        width: 100%;
+    }
+
+    .description{
+        text-align: center;
+        width: 100%;
+    }
+
+    .container{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "row1" 
+        "row1" 
+        "row2" 
+        "row2" 
+        "row3" 
+        "row3";
+    }
+
+    .summary{
+        width: 100%;
+        height:auto;
+    }
+    
+    .mockup{
+        width: 100%;
+        height:auto;
+    }
+
+    .row1{
+        width: 100%;
+        height: auto;
+    }
+
+    #section3{
+        display: none;
+    }
+
+    .whatIDo {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .toolIconsImg {
+        width: 80%;
+    }
+
+}
